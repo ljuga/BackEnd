@@ -7,26 +7,27 @@ import javax.persistence.Id;
 
 @Entity
 public class Experiencia {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  int id;
+    private int id;
     private String nombreE;
     private String nombreE2;
     private String descripcionE;
-    
-    //constructores
+    private String imgE;
 
+    //constructores
     public Experiencia() {
     }
 
-    public Experiencia(String nombreE, String nombreE2, String descripcionE) {
+    public Experiencia(String nombreE, String nombreE2, String descripcionE, String imgE) {
         this.nombreE = nombreE;
         this.nombreE2 = nombreE2;
         this.descripcionE = descripcionE;
+        this.imgE = imgE;
     }
-    
-    //Getter setter
 
+    //Getter setter
     public int getId() {
         return id;
     }
@@ -58,5 +59,12 @@ public class Experiencia {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
-    
+
+    public String getImgE() {
+        return imgE;
+    }
+
+    public void setImgE(String imgE) {
+        this.imgE = imgE;
+    }
 }

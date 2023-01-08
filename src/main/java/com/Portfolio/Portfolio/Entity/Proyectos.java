@@ -15,19 +15,20 @@ public class Proyectos {
     private String nombrePT;
     private String descripcionP;
     private String nombreL;
-    
-    //contructor
+    private String imgP;
 
+    //contructor
     public Proyectos() {
     }
 
-    public Proyectos(String nombreP, String nombrePT, String descripcionP, String nombreL) {
+    public Proyectos(String nombreP, String nombrePT, String descripcionP, String nombreL, String imgP) {
         this.nombreP = nombreP;
         this.nombrePT = nombrePT;
         this.descripcionP = descripcionP;
         this.nombreL = nombreL;
+        this.imgP = imgP;
     }
-    
+
     //getter setter
 
     public int getId() {
@@ -69,6 +70,15 @@ public class Proyectos {
     public void setNombreL(String nombreL) {
         this.nombreL = nombreL;
     }
-    
+
+    public String getImgP() {
+        return imgP;
+    }
+
+    public void setImgP(String imgP) {
+        this.imgP = imgP;
+    }
+
+
     
 }

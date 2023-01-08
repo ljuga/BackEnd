@@ -53,7 +53,7 @@ public class CExperiencia {
 
         }
 
-        Experiencia experiencia = new Experiencia(dtoExp.getNombreE(), dtoExp.getNombreE2(), dtoExp.getDescripcionE());
+        Experiencia experiencia = new Experiencia(dtoExp.getNombreE(), dtoExp.getNombreE2(), dtoExp.getDescripcionE(), dtoExp.getImgE());
         sExperiencia.save(experiencia);
 
         return new ResponseEntity(new Mensaje("Experiencia Agregada"), HttpStatus.OK);
@@ -79,6 +79,7 @@ public class CExperiencia {
         experiencia.setNombreE(dtoExp.getNombreE());
         experiencia.setNombreE2(dtoExp.getNombreE2());
         experiencia.setDescripcionE(dtoExp.getDescripcionE());
+        experiencia.setImgE(dtoExp.getImgE());
 
         sExperiencia.save(experiencia);
 

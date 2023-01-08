@@ -1,6 +1,6 @@
 package com.Portfolio.Portfolio.Security.Entity;
 
-import static com.fasterxml.jackson.databind.util.ClassUtil.name;
+
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.Column;
@@ -23,7 +23,6 @@ public class Usuario {
     
     private int id;
     
-    @NotNull
     private String nombre;
     @NotNull
     @Column(unique = true)

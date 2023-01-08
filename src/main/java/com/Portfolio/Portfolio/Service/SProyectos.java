@@ -27,8 +27,8 @@ public class SProyectos {
         return rProyectos.findByNombreP(nombreP);
     }
 
-    public void save(Proyectos proy) {
-        rProyectos.save(proy);
+    public void save(Proyectos proyecto) {
+        rProyectos.save(proyecto);
     }
 
     public void delete(int id) {

@@ -61,7 +61,7 @@ public class CProyectos {
 
         }
 
-        Proyectos proyectos = new Proyectos(dtoproy.getNombreP(), dtoproy.getNombrePT(), dtoproy.getDescripcionP(), dtoproy.getNombreL());
+        Proyectos proyectos = new Proyectos(dtoproy.getNombreP(), dtoproy.getNombrePT(), dtoproy.getDescripcionP(), dtoproy.getNombreL(),dtoproy.getImgP());
         sProyectos.save(proyectos);
 
         return new ResponseEntity(new Mensaje("SobreMi Agregada"), HttpStatus.OK);
@@ -88,6 +88,7 @@ public class CProyectos {
         proyecto.setNombrePT(dtoproy.getNombrePT());
         proyecto.setDescripcionP(dtoproy.getDescripcionP());
         proyecto.setNombreL(dtoproy.getNombreL());
+        proyecto.setImgP(dtoproy.getImgP());
 
 
         sProyectos.save(proyecto);

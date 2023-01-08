@@ -24,8 +24,6 @@ public class Persona {
 
     private String apellido;
 
-    @Size(min = 1, max = 50, message = "No cumple con los requisitos")
-
     private String img;
 
     //contructor

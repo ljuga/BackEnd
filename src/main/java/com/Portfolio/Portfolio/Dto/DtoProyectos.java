@@ -3,6 +3,7 @@ package com.Portfolio.Portfolio.Dto;
 import javax.validation.constraints.NotBlank;
 
 public class DtoProyectos {
+
     @NotBlank
     private String nombreP;
     @NotBlank
@@ -12,18 +13,19 @@ public class DtoProyectos {
     @NotBlank
     private String nombreL;
 
-    
-    //contructor 
+    private String imgP;
+
+    //contructor
     public DtoProyectos() {
     }
 
-    public DtoProyectos(String nombreP, String nombrePT, String descripcionP, String nombreL) {
+    public DtoProyectos(String nombreP, String nombrePT, String descripcionP, String nombreL, String imgP) {
         this.nombreP = nombreP;
         this.nombrePT = nombrePT;
         this.descripcionP = descripcionP;
         this.nombreL = nombreL;
+        this.imgP = imgP;
     }
-    
     //getter setter
 
     public String getNombreP() {
@@ -57,7 +59,13 @@ public class DtoProyectos {
     public void setNombreL(String nombreL) {
         this.nombreL = nombreL;
     }
-    
-    
-    
+
+    public String getImgP() {
+        return imgP;
+    }
+
+    public void setImgL(String imgP) {
+        this.imgP = imgP;
+    }
+
 }
