@@ -64,8 +64,10 @@ public class DtoProyectos {
         return imgP;
     }
 
-    public void setImgL(String imgP) {
+    public void setImgP(String imgP) {
         this.imgP = imgP;
     }
+
+
 
 }

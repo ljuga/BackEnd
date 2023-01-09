@@ -26,21 +26,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/proylab")
-@CrossOrigin(origins = {"https://portfolio-jerel.web.app","http://localhost:4200"})
+@CrossOrigin(origins = {"https://portfolio-jerel.web.app", "http://localhost:4200"})
 
 public class CProyectos {
-    
+
     @Autowired
     SProyectos sProyectos;
-    
-    
+
     @GetMapping("/lista")
     public ResponseEntity<List<SobreMi>> list() {
         List<Proyectos> list = sProyectos.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
-    
-    
+
     @GetMapping("/detail/{id}")
     public ResponseEntity<Proyectos> getById(@PathVariable("id") int id) {
         if (!sProyectos.existById(id)) {
@@ -49,7 +47,7 @@ public class CProyectos {
         Proyectos proyectos = sProyectos.getOne(id).get();
         return new ResponseEntity(proyectos, HttpStatus.OK);
     }
-    
+
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody DtoProyectos dtoproy) {
         if (StringUtils.isBlank(dtoproy.getNombreP())) {
@@ -61,13 +59,13 @@ public class CProyectos {
 
         }
 
-        Proyectos proyectos = new Proyectos(dtoproy.getNombreP(), dtoproy.getNombrePT(), dtoproy.getDescripcionP(), dtoproy.getNombreL(),dtoproy.getImgP());
+        Proyectos proyectos = new Proyectos(dtoproy.getNombreP(), dtoproy.getNombrePT(), dtoproy.getDescripcionP(), dtoproy.getNombreL(), dtoproy.getImgP());
         sProyectos.save(proyectos);
 
         return new ResponseEntity(new Mensaje("SobreMi Agregada"), HttpStatus.OK);
     }
-    
-     @PutMapping("/update/{id}")
+
+    @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody DtoProyectos dtoproy) {
         //validamos si existe el id
         if (!sProyectos.existById(id)) {
@@ -90,12 +88,11 @@ public class CProyectos {
         proyecto.setNombreL(dtoproy.getNombreL());
         proyecto.setImgP(dtoproy.getImgP());
 
-
         sProyectos.save(proyecto);
 
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
     }
-    
+
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         if (!sProyectos.existById(id)) {

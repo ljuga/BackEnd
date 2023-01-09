@@ -8,14 +8,14 @@ public class DtoHyS {
     private String nombre;
     @NotBlank
     private int porcentaje;
-    private int color;
+    private String color;
     
     //contructor
 
     public DtoHyS() {
     }
 
-    public DtoHyS(String nombre, int porcentaje, int color) {
+    public DtoHyS(String nombre, int porcentaje, String color) {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
         this.color = color;
@@ -39,11 +39,11 @@ public class DtoHyS {
         this.porcentaje = porcentaje;
     }
 
-    public int getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(int color) {
+    public void setColor(String color) {
         this.color = color;
     }
 
