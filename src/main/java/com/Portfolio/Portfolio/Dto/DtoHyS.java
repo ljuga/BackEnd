@@ -5,7 +5,7 @@ import javax.validation.constraints.NotBlank;
 public class DtoHyS {
 
     @NotBlank
-    private String nombre;
+    private String nombreS;
     @NotBlank
     private int porcentaje;
     private String color;
@@ -15,20 +15,20 @@ public class DtoHyS {
     public DtoHyS() {
     }
 
-    public DtoHyS(String nombre, int porcentaje, String color) {
-        this.nombre = nombre;
+    public DtoHyS(String nombreS, int porcentaje, String color) {
+        this.nombreS = nombreS;
         this.porcentaje = porcentaje;
         this.color = color;
     }
     
     //getter setter
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreS() {
+        return nombreS;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreS(String nombreS) {
+        this.nombreS = nombreS;
     }
 
     public int getPorcentaje() {

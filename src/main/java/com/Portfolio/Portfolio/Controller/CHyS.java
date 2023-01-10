@@ -54,16 +54,16 @@ public class CHyS {
 
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody DtoHyS dtohys) {
-        if (StringUtils.isBlank(dtohys.getNombre())) {
+        if (StringUtils.isBlank(dtohys.getNombreS())) {
             return new ResponseEntity(new Mensaje("El nombre es Obligatorio"), HttpStatus.BAD_REQUEST);
         }
 
-        if (sHyS.existByNombre(dtohys.getNombre())) {
+        if (sHyS.existByNombreS(dtohys.getNombreS())) {
             return new ResponseEntity(new Mensaje("Esa Skill ya Existe"), HttpStatus.BAD_REQUEST);
 
         }
 
-        HyS hys = new HyS(dtohys.getNombre(), dtohys.getPorcentaje(), dtohys.getColor());
+        HyS hys = new HyS(dtohys.getNombreS(), dtohys.getPorcentaje(), dtohys.getColor());
         sHyS.save(hys);
 
         return new ResponseEntity(new Mensaje("Skill Agregada"), HttpStatus.OK);
@@ -77,19 +77,20 @@ public class CHyS {
         }
 
         //validamos si existe el nombre
-        if (sHyS.existByNombre(dtohys.getNombre()) && sHyS.getByNombre(dtohys.getNombre()).get().getId() != id) {
+        if (sHyS.existByNombreS(dtohys.getNombreS()) && sHyS.getByNombreS(dtohys.getNombreS()).get().getId() != id) {
             return new ResponseEntity(new Mensaje("Esa Skill ya existe"), HttpStatus.BAD_REQUEST);
         }
 
         //no puede estar vacio
-        if (StringUtils.isBlank(dtohys.getNombre())) {
+        if (StringUtils.isBlank(dtohys.getNombreS())) {
             return new ResponseEntity(new Mensaje("El nombre no puede estar en blanco"), HttpStatus.BAD_REQUEST);
         }
         HyS hys = sHyS.getOne(id).get();
-        hys.setNombre(dtohys.getNombre());
+        hys.setNombreS(dtohys.getNombreS());
         hys.setPorcentaje(dtohys.getPorcentaje());
         hys.setColor(dtohys.getColor());
 
+        
         sHyS.save(hys);
 
         return new ResponseEntity(new Mensaje("Skill actualizada"), HttpStatus.OK);

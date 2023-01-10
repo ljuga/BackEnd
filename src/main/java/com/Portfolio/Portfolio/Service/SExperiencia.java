@@ -34,13 +34,13 @@ public class SExperiencia {
     public void delete(int id) {
         rExperiencia.deleteById(id);
     }
-    
-    public boolean existById(int id){
-    return rExperiencia.existsById(id);
+
+    public boolean existById(int id) {
+        return rExperiencia.existsById(id);
     }
-    
-    public boolean existByNombreE(String nombreE){
-    return rExperiencia.existsByNombreE(nombreE);
+
+    public boolean existByNombreE(String nombreE) {
+        return rExperiencia.existsByNombreE(nombreE);
     }
 
 }

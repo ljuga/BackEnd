@@ -25,8 +25,8 @@ public class SHyS {
         return rHyS.findById(id);
     }
 
-    public Optional<HyS> getByNombre(String nombre) {
-        return rHyS.findByNombre(nombre);
+    public Optional<HyS> getByNombreS(String nombreS) {
+        return rHyS.findByNombreS(nombreS);
     }
 
     public void save(HyS skill) {
@@ -41,8 +41,8 @@ public class SHyS {
     return rHyS.existsById(id);
     }
     
-    public boolean existByNombre(String nombre){
-    return rHyS.existsByNombre(nombre);
+    public boolean existByNombreS(String nombreS){
+    return rHyS.existsByNombreS(nombreS);
     }
     
 }

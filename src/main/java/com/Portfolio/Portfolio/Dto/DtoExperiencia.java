@@ -25,7 +25,6 @@ public class DtoExperiencia {
     }
 
     //getter setter
-
     public String getNombreE() {
         return nombreE;
     }
@@ -57,6 +56,5 @@ public class DtoExperiencia {
     public void setImgE(String imgE) {
         this.imgE = imgE;
     }
-    
-    
+
 }

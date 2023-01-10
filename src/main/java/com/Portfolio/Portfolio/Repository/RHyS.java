@@ -7,8 +7,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RHyS extends JpaRepository<HyS, Integer>{
-    Optional<HyS> findByNombre(String nombre);
-    public boolean existsByNombre(String nombre);
+    Optional<HyS> findByNombreS(String nombreS);
+    public boolean existsByNombreS(String nombreS);
     
     
 }
