@@ -1,5 +1,6 @@
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Repository\IPersonaRepository.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Controller\CProyectos.java
+E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Service\SEducacion.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Service\SProyectos.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Entity\Experiencia.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Security\Entity\Rol.java
@@ -7,10 +8,13 @@ E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Repository\RS
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Repository\RExperiencia.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Security\Enums\RolNombre.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Dto\DtoHyS.java
+E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Controller\CEducacion.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Dto\DtoExperiencia.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Security\Service\UsuarioService.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Entity\HySB.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Dto\DtoProyectos.java
+E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Dto\DtoEducacion.java
+E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Entity\Educacion.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Entity\Proyectos.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Controller\CHySB.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Security\Controller\Mensaje.java
@@ -43,6 +47,7 @@ E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Security\Enti
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Service\ImpPersonaService.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Dto\DtoSobreMi.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Repository\RHyS.java
+E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Repository\REducacion.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Security\Service\UserDetailImp.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\Entity\HyS.java
 E:\Trabajo\Portfolio\BackEnd\src\main\java\com\Portfolio\Portfolio\PortfolioApplication.java

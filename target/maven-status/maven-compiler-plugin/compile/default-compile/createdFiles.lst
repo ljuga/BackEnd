@@ -4,9 +4,11 @@ com\Portfolio\Portfolio\Entity\Persona.class
 com\Portfolio\Portfolio\Security\Dto\LoginUsuario.class
 com\Portfolio\Portfolio\Dto\DtoHyS.class
 com\Portfolio\Portfolio\Repository\RSobreMi.class
+com\Portfolio\Portfolio\Service\SEducacion.class
 com\Portfolio\Portfolio\PortfolioApplication.class
 com\Portfolio\Portfolio\Security\Repository\IUsuarioRepository.class
 com\Portfolio\Portfolio\Service\SHyS.class
+com\Portfolio\Portfolio\Controller\CEducacion.class
 com\Portfolio\Portfolio\Controller\CExperiencia.class
 com\Portfolio\Portfolio\Dto\DtoProyectos.class
 com\Portfolio\Portfolio\WebConfig.class
@@ -25,11 +27,13 @@ com\Portfolio\Portfolio\Repository\RHyS.class
 com\Portfolio\Portfolio\Controller\CHyS.class
 com\Portfolio\Portfolio\Controller\CHySB.class
 com\Portfolio\Portfolio\Security\Dto\NuevoUsuario.class
+com\Portfolio\Portfolio\Dto\DtoEducacion.class
 com\Portfolio\Portfolio\Security\Repository\IRolRepository.class
 com\Portfolio\Portfolio\Security\Service\UsuarioService.class
 com\Portfolio\Portfolio\Security\Service\UserDetailImp.class
 com\Portfolio\Portfolio\Security\Controller\AuthController.class
 com\Portfolio\Portfolio\Security\jwt\JwtProvider.class
+com\Portfolio\Portfolio\Entity\Educacion.class
 com\Portfolio\Portfolio\Controller\CProyectos.class
 com\Portfolio\Portfolio\Security\jwt\JwtTokenFilter.class
 com\Portfolio\Portfolio\Service\SProyectos.class
@@ -39,6 +43,7 @@ com\Portfolio\Portfolio\Security\Dto\JwtDto.class
 com\Portfolio\Portfolio\Repository\RProyectos.class
 com\Portfolio\Portfolio\Security\Entity\Rol.class
 com\Portfolio\Portfolio\Service\SHySB.class
+com\Portfolio\Portfolio\Repository\REducacion.class
 com\Portfolio\Portfolio\Controller\CSobreMi.class
 com\Portfolio\Portfolio\Security\Entity\UsuarioPrincipal.class
 com\Portfolio\Portfolio\Repository\RHySB.class
